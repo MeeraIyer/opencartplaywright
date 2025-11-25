@@ -1,0 +1,18 @@
+[
+    {
+        "testName" : "Valid Login",
+        "email": "iyer@gmail.com",
+        "telephone": "111-111-1111",
+        "password": "test@123",
+        "expected": "success"
+    },
+
+    {
+        "testName": "Invalid Login",
+        "email": "abc123@gmail.co",
+        "telephone": "0000000000",
+        "password": "abcabc",
+        "expected": "failure"
+    }
+
+]
