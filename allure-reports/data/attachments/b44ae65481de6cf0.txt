@@ -1,7 +1,0 @@
-Error checking My Account Page heading visibility: Error: locator.isVisible: Error: strict mode violation: locator('h2:nth-child(1)') resolved to 2 elements:
-    1) <h2>New Customer</h2> aka getByRole('heading', { name: 'New Customer' })
-    2) <h2>Returning Customer</h2> aka getByRole('heading', { name: 'Returning Customer' })
-
-Call log:
-    - checking visibility of locator('h2:nth-child(1)')
-
