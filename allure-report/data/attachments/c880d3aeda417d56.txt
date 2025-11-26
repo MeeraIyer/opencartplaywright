@@ -1,0 +1,4 @@
+The tooltip is:  Compare this Product
+ Success: You have added MacBook to your product comparison!
+×
+Product not found MacBook
