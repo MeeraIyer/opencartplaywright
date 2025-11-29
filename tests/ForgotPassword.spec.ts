@@ -13,7 +13,8 @@ for(const data of jsonTestData)
     test(`Forgot Password from JSON testdata: ${data.testName} @datadriven`, async({page})=>{
 
         const config = new TestConfig();
-        await page.goto(config.appUrl);
+        //await page.goto(config.appUrl);
+        await page.goto('/demo/');
 
         let homepage = new HomePage(page);
         let loginpage = new LoginPage(page);

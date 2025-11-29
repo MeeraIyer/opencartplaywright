@@ -14,7 +14,8 @@ let loginpage:LoginPage;
 test.beforeEach(async({page})=>{
 
     config = new TestConfig();
-    await page.goto(config.appUrl);
+    //await page.goto(config.appUrl);
+    await page.goto('/demo/');
     homepage=new HomePage(page);
     myaccountpage=new MyAccountPage(page);
     logoutpage= new LogoutPage(page);

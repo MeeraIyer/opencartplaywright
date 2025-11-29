@@ -21,6 +21,10 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
   workers: 2,
+  // Test-level timeout (per test)
+  timeout: 30_000, // 30 seconds
+  // Global timeout (for the whole test run)
+  globalTimeout: 60 * 60 * 1000, // 1 hour
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [['html'],
   ['allure-playwright', {outputFoler: '../results/allure-results'}],
@@ -32,9 +36,17 @@ export default defineConfig({
    // baseURL: 'https://tutorialsninja.com/demo/',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    //Timeout for individual actions (click, fill, etc.)
+    actionTimeout: 10_000,
+    //Allow tests to run against sites with invalid SSL certs
+    ignoreHTTPSErrors: true,
+    trace: 'on',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
+    //Run browser in headless mode (no visible window)
+    headless: true,
+    //Base URL for relative navigation
+    baseURL: 'https://tutorialsninja.com/demo/',
   },
 
   /* Configure projects for major browsers */

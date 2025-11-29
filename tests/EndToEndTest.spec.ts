@@ -26,7 +26,8 @@ let checkoutpage:CheckoutPage;
 test("Execute end-to-end testcase flow", async({page})=>{
 
     config = new TestConfig();
-    await page.goto(config.appUrl);
+   // await page.goto(config.appUrl);
+   await page.goto('/demo/');
 
     let registeredEmail = await performRegistration(page);
     console.log("Registration is completed");

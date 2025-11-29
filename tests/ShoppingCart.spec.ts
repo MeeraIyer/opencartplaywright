@@ -24,7 +24,8 @@ test.beforeEach(async({page})=>{
     productpage=new ProductPage(page);
     productdisplaypage=new ProductDisplayPage(page);
     shoppingcart=new ShoppingCartPage(page);
-    await page.goto(config.appUrl);
+   // await page.goto(config.appUrl);
+   await page.goto('/demo/');
 })
 
 test.afterEach(async({page})=>{

@@ -1,0 +1,47 @@
+Exception occured while clicking 'My Account' locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('a[title=\'My Account\']')
+
+    at HomePage.clickMyAccountLink (C:\Users\meera\Playwright\opencartplaywright\pages\HomePage.ts:49:41)
+    at C:\Users\meera\Playwright\opencartplaywright\tests\Login.spec.ts:32:20 {
+  name: 'TimeoutError',
+  [Symbol(step)]: {
+    location: {
+      file: 'C:\\Users\\meera\\Playwright\\opencartplaywright\\pages\\HomePage.ts',
+      line: 49,
+      column: 41,
+      function: 'HomePage.clickMyAccountLink'
+    },
+    category: 'pw:api',
+    title: "Click locator('a[title=\\'My Account\\']')",
+    apiName: 'locator.click',
+    params: { selector: "a[title='My Account']", strict: true, timeout: 10000 },
+    group: undefined,
+    stepId: 'pw:api@35',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@35',
+      _title: "Click locator('a[title=\\'My Account\\']')",
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1764437474765,
+    error: {
+      message: 'TimeoutError: locator.click: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('a[title=\\'My Account\\']')\x1B[22m\n",
+      stack: 'TimeoutError: locator.click: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('a[title=\\'My Account\\']')\x1B[22m\n" +
+        '\n' +
+        '    at HomePage.clickMyAccountLink (C:\\Users\\meera\\Playwright\\opencartplaywright\\pages\\HomePage.ts:49:41)\n' +
+        '    at C:\\Users\\meera\\Playwright\\opencartplaywright\\tests\\Login.spec.ts:32:20',
+      cause: undefined
+    }
+  }
+}

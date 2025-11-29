@@ -1,5 +1,0 @@
-Registration is completed
-Logout is completed
-Login is completed
-Add Product to Cart is completed
-Navigated to shopping cart

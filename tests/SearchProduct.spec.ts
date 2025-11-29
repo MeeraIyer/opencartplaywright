@@ -16,8 +16,8 @@ test.beforeEach(async({page})=>{
     homepage=new HomePage(page);
     loginpage=new LoginPage(page);
     searchresultspage=new SearchResultsPage(page);
-
-    await page.goto(config.appUrl);
+    await page.goto('/demo/');
+    //await page.goto(config.appUrl);
 })
 
 test.afterEach(async({page})=>{
